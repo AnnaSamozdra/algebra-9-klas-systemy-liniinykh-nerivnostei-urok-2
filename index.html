@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Алгебра 9 клас — Системи лінійних нерівностей: урок для самостійного опрацювання</title>
+<style>
+:root{--blue:#315ee8;--navy:#172b50;--teal:#0f8b8d;--ink:#17243b;--muted:#5d6b82;--line:#dce3ef;--bg:#f5f7fb;--green:#147d52;--red:#b42332;--orange:#c87512}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.wrap{max-width:1000px;margin:auto}header{background:linear-gradient(130deg,#162b55,#315ee8 65%,#0f8b8d);color:white;padding:30px 18px 32px}header .eyebrow{font-size:.9rem;opacity:.9;font-weight:800;letter-spacing:.04em}h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0 12px}header p{max-width:790px;margin:0;font-size:1.06rem}
+nav{position:sticky;top:0;background:#ffffffef;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10;overflow:auto}nav .wrap{display:flex;gap:6px;padding:8px 12px;white-space:nowrap}nav a{color:var(--blue);text-decoration:none;padding:7px 10px;border-radius:10px;font-weight:700;font-size:.9rem}nav a:hover{background:#edf2ff}
+main{padding:18px 14px 42px}.section{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(17px,3vw,28px);margin:18px auto;box-shadow:0 4px 16px #1d35570a}.tag{display:inline-block;background:#eaf0ff;color:var(--blue);font-weight:800;padding:5px 12px;border-radius:999px;margin-bottom:8px}h2{font-size:clamp(1.35rem,3vw,1.8rem);line-height:1.3;margin:5px 0 12px}h3{margin:14px 0 8px;font-size:1.12rem}.lead{font-size:1.08rem}.note{background:#f3f7ff;border-left:4px solid var(--blue);padding:12px 15px;border-radius:10px;margin:14px 0}.warning{background:#fff7e8;border-left:4px solid var(--orange);padding:12px 15px;border-radius:10px;margin:14px 0}.goodbox{background:#eaf8f1;border-left:4px solid var(--green);padding:12px 15px;border-radius:10px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.mini{border:1px solid var(--line);border-radius:14px;padding:15px;background:#fff}.math{font-family:"Cambria Math",Cambria,serif;font-size:1.17rem;line-height:1.8}.system{display:flex;align-items:center;justify-content:center;gap:10px;font-family:"Cambria Math",Cambria,serif;font-size:1.28rem;font-weight:600;line-height:1.55;margin:12px auto}.brace{font-size:3.6rem;font-weight:300;line-height:1;transform:scaleX(.7);color:var(--navy)}.system-lines{display:flex;flex-direction:column}.frac{display:inline-flex;vertical-align:middle;flex-direction:column;align-items:stretch;text-align:center;font-size:.94em;line-height:1.1;margin:0 .12em;min-width:1.15em}.frac>span:first-child{border-bottom:1.5px solid currentColor;padding:0 .12em .12em}.frac>span:last-child{padding:.1em .12em 0}.example{border:1px solid var(--line);border-radius:15px;padding:16px;margin:15px 0}.steps{display:grid;gap:9px}.step{padding:10px 12px;border-radius:10px;background:#f7f9fd}.step b{color:var(--blue)}.visual{border:1px solid var(--line);border-radius:14px;padding:12px;margin:14px 0;background:white}.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.92rem;color:var(--muted);margin-bottom:6px}.key{display:inline-block;width:13px;height:8px;border-radius:8px;margin-right:6px}.line-svg{width:100%;height:auto;display:block;min-height:100px}.answer{font-weight:800;color:var(--green);background:#eaf8f1;border-radius:10px;padding:10px 13px;display:inline-block;margin:7px 0}.task{border:1px solid var(--line);border-radius:14px;padding:15px;margin:13px 0;background:#fff}.task h3{margin:0 0 8px}.level{display:inline-block;font-size:.8rem;color:#6846c7;background:#f1edff;padding:3px 9px;border-radius:999px;font-weight:750;margin-bottom:7px}
+label{display:block;margin:8px 0;cursor:pointer}input[type=radio]{margin-right:8px;accent-color:var(--blue)}input[type=text]{width:min(100%,360px);padding:10px 12px;border:1px solid #bac7dc;border-radius:9px;font:inherit}button{border:0;background:var(--blue);color:white;font:inherit;font-weight:750;padding:10px 15px;border-radius:10px;cursor:pointer;margin:6px 5px 4px 0}button:hover{filter:brightness(.95)}button.secondary{background:#eaf0ff;color:var(--blue)}.feedback{font-weight:650;margin-top:8px;min-height:1.4em}.good{color:var(--green)}.bad{color:var(--red)}details{border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin:10px 0}summary{cursor:pointer;font-weight:750;color:var(--blue)}.progress{height:9px;background:#e8edf6;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--teal));transition:width .25s}.small{font-size:.92rem;color:var(--muted)}footer{text-align:center;color:var(--muted);padding:12px 18px 30px;font-size:.9rem}
+@media(max-width:560px){header{padding:23px 15px}.section{padding:16px}.system{font-size:1.1rem}.brace{font-size:3rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">АЛГЕБРА · 9 КЛАС · § 7 · УРОК ДЛЯ САМОСТІЙНОГО ОПРАЦЮВАННЯ</div>
+<h1>Системи лінійних нерівностей<br>з однією змінною</h1>
+<p>Якщо ти пропустив урок або хочеш краще зрозуміти тему — рухайся послідовно: прочитай пояснення, розбери приклад, виконай схоже завдання та перевір себе.</p>
+</div></header>
+<nav><div class="wrap"><a href="#start">Початок</a><a href="#method">Алгоритм</a><a href="#ex714">№ 7.14</a><a href="#integers">Цілі розв’язки</a><a href="#problems">Практичні задачі</a><a href="#practice">Тренажер</a><a href="#check">Самоперевірка</a></div></nav>
+<main class="wrap">
+<section class="section" id="start">
+<span class="tag">📍 Почни звідси</span><h2>Що означає розв’язати систему?</h2>
+<p class="lead">Розв’язком системи нерівностей називають значення змінної, за якого <b>кожна нерівність системи правильна</b>. Тому потрібно знайти спільні розв’язки всіх нерівностей — тобто перетин проміжків.</p>
+<div class="system"><span class="brace">{</span><span class="system-lines"><span>2x &gt; 24,</span><span>3x &lt; 39.</span></span></div>
+<div class="steps">
+<div class="step"><b>Перша нерівність:</b> 2x &gt; 24, тому x &gt; 12.</div>
+<div class="step"><b>Друга нерівність:</b> 3x &lt; 39, тому x &lt; 13.</div>
+<div class="step"><b>Разом:</b> число має бути більшим за 12 і меншим за 13.</div>
+</div>
+<div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>x &gt; 12</span><span><i class="key" style="background:#d97706"></i>x &lt; 13</span><span><i class="key" style="background:#14804a"></i>спільна частина</span></div>
+<svg class="line-svg" viewBox="0 0 700 145" role="img" aria-label="Проміжки x більше 12 і x менше 13 перетинаються між 12 і 13">
+<line x1="40" y1="100" x2="655" y2="100" stroke="#17243b" stroke-width="2"/><path d="M655 100 l-10 -5 v10z" fill="#17243b"/>
+<line x1="320" y1="85" x2="320" y2="115" stroke="#17243b" stroke-width="2"/><line x1="395" y1="85" x2="395" y2="115" stroke="#17243b" stroke-width="2"/>
+<line x1="320" y1="30" x2="645" y2="30" stroke="#315ee8" stroke-width="5"/><path d="M645 30 l-10 -6 v12z" fill="#315ee8"/><circle cx="320" cy="30" r="6" fill="white" stroke="#315ee8" stroke-width="3"/>
+<line x1="50" y1="53" x2="395" y2="53" stroke="#d97706" stroke-width="5"/><path d="M50 53 l10 -6 v12z" fill="#d97706"/><circle cx="395" cy="53" r="6" fill="white" stroke="#d97706" stroke-width="3"/>
+<line x1="320" y1="76" x2="395" y2="76" stroke="#14804a" stroke-width="7" stroke-linecap="round"/><circle cx="320" cy="76" r="5" fill="white" stroke="#14804a" stroke-width="3"/><circle cx="395" cy="76" r="5" fill="white" stroke="#14804a" stroke-width="3"/>
+<text x="320" y="135" text-anchor="middle" font-size="16" fill="#17243b">12</text><text x="395" y="135" text-anchor="middle" font-size="16" fill="#17243b">13</text><text x="665" y="105" font-size="16" fill="#17243b">x</text></svg></div>
+<p class="answer">Відповідь: 12 &lt; x &lt; 13, або x ∈ (12; 13).</p>
+<div class="note"><b>Зверни увагу:</b> 12 і 13 не входять до відповіді, бо нерівності строгі (&gt; та &lt;). На координатній прямій у цих точках — порожні кружечки.</div>
+</section>
+
+<section class="section" id="method">
+<span class="tag">🧭 Алгоритм</span><h2>П’ять кроків для будь-якої системи</h2>
+<div class="steps">
+<div class="step"><b>1.</b> Розв’яжи першу нерівність, виконуючи однакові перетворення з обома частинами.</div>
+<div class="step"><b>2.</b> Розв’яжи другу нерівність. Якщо ділиш або множиш на від’ємне число, <b>зміни знак нерівності на протилежний</b>.</div>
+<div class="step"><b>3.</b> Запиши кожну відповідь у вигляді нерівності або проміжку.</div>
+<div class="step"><b>4.</b> Познач обидва проміжки на одній координатній прямій і знайди спільну частину.</div>
+<div class="step"><b>5.</b> Запиши відповідь. Якщо спільної частини немає — розв’язків немає.</div>
+</div>
+<div class="warning"><b>Типова помилка.</b> Після ділення на від’ємне число знак нерівності змінюється. Наприклад, −4x &lt; 8<br>x &gt; −2, а не x &lt; −2.</div>
+</section>
+
+<section class="section" id="ex714">
+<span class="tag">📖 Розбираємо завдання з підручника</span><h2>Вправа № 7.14 (1)</h2>
+<p class="small">Підручник Істера, сторінка 56. Тут розберемо повний шлях від системи до відповіді.</p>
+<div class="system"><span class="brace">{</span><span class="system-lines"><span>2,6 + x &gt; 5(x + 1) − 6,</span><span>2(x − 0,4) − x &lt; 3x − 0,5.</span></span></div>
+<div class="example">
+<h3>Крок 1. Розв’язуємо першу нерівність</h3>
+<div class="steps">
+<div class="step">Розкриваємо дужки: <span class="math">2,6 + x &gt; 5x + 5 − 6</span></div>
+<div class="step">Зводимо числа справа: <span class="math">2,6 + x &gt; 5x − 1</span></div>
+<div class="step">Переносимо x в праву частину, а числа — в ліву: <span class="math">3,6 &gt; 4x</span></div>
+<div class="step">Ділимо на 4: <span class="math">0,9 &gt; x</span>, тобто <b>x &lt; 0,9</b>.</div>
+</div>
+</div>
+<div class="example">
+<h3>Крок 2. Розв’язуємо другу нерівність</h3>
+<div class="steps">
+<div class="step">Розкриваємо дужки: <span class="math">2x − 0,8 − x &lt; 3x − 0,5</span></div>
+<div class="step">Зводимо подібні доданки: <span class="math">x − 0,8 &lt; 3x − 0,5</span></div>
+<div class="step">Переносимо x вправо, числа вліво: <span class="math">−0,3 &lt; 2x</span></div>
+<div class="step">Ділимо на 2: <b>x &gt; −0,15</b>.</div>
+</div>
+</div>
+<div class="example">
+<h3>Крок 3. Знаходимо перетин</h3>
+<p>Маємо одночасно x &lt; 0,9 і x &gt; −0,15. Отже, x лежить між −0,15 та 0,9; обидві межі не включаємо.<div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>Перша нерівність</span><span><i class="key" style="background:#d97706"></i>Друга нерівність</span><span><i class="key" style="background:#14804a"></i>Перетин</span></div><svg class="line-svg" viewBox="0 0 700 130" role="img" aria-label="Перетин x більше −0,15 і x менше 0,9"><line x1="35" y1="76" x2="660" y2="76" stroke="#17243b" stroke-width="2"/><path d="M660 76 l-10 -5 v10z" fill="#17243b"/><line x1="305.8" y1="40" x2="640" y2="40" stroke="#315ee8" stroke-width="4"/><path d="M640 40 l-9 -5 v10z" fill="#315ee8"/><line x1="55" y1="54" x2="615.5" y2="54" stroke="#d97706" stroke-width="4"/><path d="M55 54 l9 -5 v10z" fill="#d97706"/><line x1="305.8" y1="92" x2="615.5" y2="92" stroke="#14804a" stroke-width="6" stroke-linecap="round"/><circle cx="305.8" cy="76" r="6" fill="white" stroke="#315ee8" stroke-width="3"/><circle cx="615.5" cy="76" r="6" fill="white" stroke="#d97706" stroke-width="3"/><text x="305.8" y="116" text-anchor="middle" font-size="16" fill="#17243b">-0.15</text><text x="615.5" y="116" text-anchor="middle" font-size="16" fill="#17243b">0.9</text><text x="670" y="81" font-size="16" fill="#17243b">x</text></svg></div></p>
+<p class="answer">Відповідь: x ∈ (−0,15; 0,9).</p>
+</div>
+<div class="task" data-answer="b">
+<span class="level">Спробуй самостійно</span><h3>Тренувальна вправа 1</h3>
+<p>Який проміжок є перетином умов x &lt; 4 та x ≥ −2?</p>
+<label><input type="radio" name="p1" value="a">(−2; 4)</label>
+<label><input type="radio" name="p1" value="b">[−2; 4)</label>
+<label><input type="radio" name="p1" value="c">(−∞; −2]</label>
+<button onclick="checkTask(this,'b','Межа −2 входить, бо x ≥ −2; число 4 не входить, бо x &lt; 4. Правильний проміжок [−2; 4).')">Перевірити</button><div class="feedback"></div>
+</div>
+<div class="warning">У попередній тренувальній вправі зверни увагу на дужки: умова x ≥ −2 включає число −2. Отже, правильна відповідь — <b>[−2; 4)</b>.</div>
+
+<h2 style="margin-top:28px">Вправа № 7.15 (1)</h2>
+<p>Тут важливо помітити, що система може не мати розв’язків.</p>
+<div class="system"><span class="brace">{</span><span class="system-lines"><span>2(x + 3) − 4 &lt; x − 8,</span><span>6x + 1 &gt; 3(x + 1).</span></span></div>
+<div class="example"><h3>Крок 1. Перша нерівність</h3>
+<p>Розкриваємо дужки: 2x + 6 − 4 &lt; x − 8.</p>
+<p>Зводимо подібні: 2x + 2 &lt; x − 8.</p>
+<p>Віднімаємо x та 2: <b>x &lt; −10</b>.</p></div>
+<div class="example"><h3>Крок 2. Друга нерівність</h3>
+<p>Розкриваємо дужки: 6x + 1 &gt; 3x + 3.</p>
+<p>Переносимо доданки: 3x &gt; 2, тому <b>x &gt; 2/3</b>.</p></div>
+<div class="example"><h3>Крок 3. Перевіряємо, чи є перетин</h3>
+<p>Перша умова вимагає, щоб x було менше за −10. Друга — щоб x було більше за 2/3. На одній координатній прямій видно, що ці проміжки розташовані окремо й не мають спільної частини.</p><div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>x &lt; −10</span><span><i class="key" style="background:#d97706"></i>x &gt; 2/3</span><span><i class="key" style="background:#14804a"></i>Спільної частини немає</span></div><svg class="line-svg" viewBox="0 0 700 150" role="img" aria-label="Проміжки x менше мінус 10 та x більше двох третин не перетинаються"><line x1="35" y1="112" x2="660" y2="112" stroke="#17243b" stroke-width="2"/><path d="M660 112 l-10 -5 v10z" fill="#17243b"/><line x1="210" y1="98" x2="210" y2="126" stroke="#17243b" stroke-width="2"/><line x1="440" y1="98" x2="440" y2="126" stroke="#17243b" stroke-width="2"/><line x1="45" y1="38" x2="210" y2="38" stroke="#315ee8" stroke-width="5"/><path d="M45 38 l10 -6 v12z" fill="#315ee8"/><circle cx="210" cy="38" r="7" fill="white" stroke="#315ee8" stroke-width="3"/><line x1="440" y1="68" x2="645" y2="68" stroke="#d97706" stroke-width="5"/><path d="M645 68 l-10 -6 v12z" fill="#d97706"/><circle cx="440" cy="68" r="7" fill="white" stroke="#d97706" stroke-width="3"/><text x="210" y="143" text-anchor="middle" font-size="16" fill="#17243b">−10</text><text x="440" y="143" text-anchor="middle" font-size="16" fill="#17243b">2/3</text><text x="672" y="117" font-size="16" fill="#17243b">x</text></svg></div><p class="answer">Відповідь: розв’язків немає (∅).</p></div>
+<div class="note">Це важливий випадок: не кожна система має розв’язки. Якщо проміжки не перетинаються, їх перетин — порожня множина.</div>
+</section>
+
+<section class="section" id="integers">
+<span class="tag">🔢 Наступний тип завдань</span><h2>Як знаходити цілі розв’язки системи</h2>
+<p>Спочатку розв’яжи систему й отримай проміжок. Лише після цього випиши цілі числа, які належать проміжку.</p>
+<h3>Приклад за типом вправи № 7.17 (1)</h3>
+<div class="system"><span class="brace">{</span><span class="system-lines"><span><span class="frac"><span>x</span><span>5</span></span> &gt; <span class="frac"><span>x + 1</span><span>6</span></span>,</span><span>2(x + 1) + 5 &gt; 3(x − 5) + 14.</span></span></div>
+<div class="example"><h3>1. Перша нерівність</h3><p>Множимо обидві частини на 30 (додатне число, тому знак не змінюється): 6x &gt; 5(x + 1).<br>6x &gt; 5x + 5.<br>Звідси <b>x &gt; 5</b>.</p></div>
+<div class="example"><h3>2. Друга нерівність</h3><p>Розкриваємо дужки: 2x + 2 + 5 &gt; 3x − 15 + 14.<br>2x + 7 &gt; 3x − 1.<br>Звідси <b>x &lt; 8</b>.</p></div>
+<div class="example"><h3>3. Перетин і цілі числа</h3><p>Перша нерівність дала <b>x &gt; 5</b>, друга — <b>x &lt; 8</b>. Позначимо обидва проміжки на одній координатній прямій: синій — перша нерівність, помаранчевий — друга, зелений — їхній перетин.</p>
+<div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>Перша нерівність: x &gt; 5</span><span><i class="key" style="background:#d97706"></i>Друга нерівність: x &lt; 8</span><span><i class="key" style="background:#14804a"></i>Перетин</span></div>
+<svg class="line-svg" viewBox="0 0 700 178" role="img" aria-label="На одній координатній прямій зображено x більше 5, x менше 8 та їхній перетин між 5 і 8">
+<line x1="38" y1="130" x2="660" y2="130" stroke="#17243b" stroke-width="2"/><path d="M660 130 l-10 -5 v10z" fill="#17243b"/>
+<line x1="300" y1="116" x2="300" y2="144" stroke="#17243b" stroke-width="2"/><line x1="470" y1="116" x2="470" y2="144" stroke="#17243b" stroke-width="2"/>
+<line x1="300" y1="35" x2="642" y2="35" stroke="#315ee8" stroke-width="5"/><path d="M642 35 l-10 -6 v12z" fill="#315ee8"/><circle cx="300" cy="35" r="7" fill="white" stroke="#315ee8" stroke-width="3"/>
+<line x1="55" y1="62" x2="470" y2="62" stroke="#d97706" stroke-width="5"/><path d="M55 62 l10 -6 v12z" fill="#d97706"/><circle cx="470" cy="62" r="7" fill="white" stroke="#d97706" stroke-width="3"/>
+<line x1="300" y1="91" x2="470" y2="91" stroke="#14804a" stroke-width="7" stroke-linecap="round"/><circle cx="300" cy="91" r="6" fill="white" stroke="#14804a" stroke-width="3"/><circle cx="470" cy="91" r="6" fill="white" stroke="#14804a" stroke-width="3"/>
+<text x="300" y="163" text-anchor="middle" font-size="17" fill="#17243b">5</text><text x="470" y="163" text-anchor="middle" font-size="17" fill="#17243b">8</text><text x="671" y="135" font-size="17" fill="#17243b">x</text></svg></div>
+<p>Отже, спільний проміжок: <b>5 &lt; x &lt; 8</b>, або <b>x ∈ (5; 8)</b>. Тепер вибираємо цілі числа всередині нього: 6 і 7.</p><p class="answer">Відповідь: 6; 7.</p></div>
+<div class="task">
+<span class="level">Тренування</span><h3>Тренувальна вправа 2</h3>
+<p>Знайди цілі розв’язки системи, якщо після розв’язування отримано 1 &lt; x ≤ 5.</p>
+<label><input type="radio" name="p2" value="a">1; 2; 3; 4</label>
+<label><input type="radio" name="p2" value="b">2; 3; 4; 5</label>
+<label><input type="radio" name="p2" value="c">2; 3; 4</label>
+<button onclick="checkTask(this,'b','Число 1 не входить через строгий знак &lt;, а 5 входить через знак ≤. Отже, цілі розв’язки: 2, 3, 4, 5.')">Перевірити</button><div class="feedback"></div>
+</div>
+<h3>Як шукати найменше або найбільше ціле число</h3>
+<p>У № 7.20 потрібно знайти найменше ціле число, а в № 7.21 — найбільше. Після розв’язування системи уважно подивись на межі проміжку: чи включені вони, і які цілі числа лежать усередині.</p>
+<details><summary>Розбір за типом № 7.20 (1): знайти найменше ціле число</summary>
+<p>Перша нерівність: 5(2x − 1) + 3 &gt; 2(x − 1) + 7x.</p>
+<p>10x − 5 + 3 &gt; 2x − 2 + 7x.<br>10x − 2 &gt; 9x − 2.<br><b>x &gt; 0</b>.</p>
+<p>Друга нерівність: 6(1 − x) + 2 ≥ 3(x + 1) − 7x.</p>
+<p>8 − 6x ≥ 3x + 3 − 7x<br>8 − 6x ≥ 3 − 4x<br>5 ≥ 2x<br><b>x ≤ 2,5</b>.</p>
+<p>Отже, 0 &lt; x ≤ 2,5. Цілі розв’язки: 1 і 2. Найменше ціле число — <b>1</b>.</p>
+</details>
+</section>
+
+<section class="section" id="problems">
+<span class="tag">🌍 Математика в житті</span><h2>Практичні задачі з підручника</h2>
+<h3>№ 7.31. Третя сторона трикутника</h3>
+<p>Одна сторона трикутника дорівнює 4 см, друга — 5 см. Периметр менший за 15 см. Якою може бути третя сторона?</p>
+<div class="steps">
+<div class="step"><b>Крок 1.</b> Познач третю сторону через x см.</div>
+<div class="step"><b>Крок 2.</b> За нерівністю трикутника: x &gt; 5 − 4, тобто x &gt; 1.</div>
+<div class="step"><b>Крок 3.</b> Периметр менший за 15: 4 + 5 + x &lt; 15, тому x &lt; 6.</div>
+<div class="step"><b>Крок 4.</b> Об’єднуємо умови: 1 &lt; x &lt; 6.</div>
+</div>
+<p class="answer">Відповідь: третя сторона більша за 1 см і менша за 6 см.</p>
+<div class="task"><span class="level">Тренування</span><h3>Тренувальна вправа 3</h3><p>Сторони трикутника дорівнюють 6 см, 8 см і x см. Яка умова має виконуватися за нерівністю трикутника?</p>
+<label><input type="radio" name="p3" value="a">2 &lt; x &lt; 14</label>
+<label><input type="radio" name="p3" value="b">x &gt; 14</label>
+<label><input type="radio" name="p3" value="c">0 &lt; x &lt; 2</label>
+<button onclick="checkTask(this,'a','Третя сторона більша за різницю двох інших: x &gt; 8 − 6 = 2, і менша за їх суму: x &lt; 8 + 6 = 14.')">Перевірити</button><div class="feedback"></div></div>
+
+<h3>№ 7.32. Маса ящика з помідорами</h3>
+<p>Першу машину завантажили 2 ящиками огірків по 24 кг і 8 ящиками помідорів. Загальна маса не більша за 260 кг. Другу машину завантажили 3 ящиками цибулі по 18 кг і 7 такими самими ящиками помідорів. Загальна маса не менша за 230 кг.</p>
+<div class="steps">
+<div class="step"><b>Крок 1.</b> Нехай x — маса одного ящика помідорів у кілограмах.</div>
+<div class="step"><b>Крок 2.</b> Перша машина: 2 · 24 + 8x ≤ 260<br>48 + 8x ≤ 260.<br>8x ≤ 212.<br>x ≤ 26,5.</div>
+<div class="step"><b>Крок 3.</b> Друга машина: 3 · 18 + 7x ≥ 230<br>54 + 7x ≥ 230.<br>7x ≥ 176.<br>x ≥ <span class="frac"><span>176</span><span>7</span></span>, тобто x ≥ 25 <span class="frac"><span>1</span><span>7</span></span>.</div>
+<div class="step"><b>Крок 4.</b> Разом: 25 <span class="frac"><span>1</span><span>7</span></span> ≤ x ≤ 26,5. Якщо x — ціле число кілограмів, можливе значення — 26.<div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>Перша нерівність</span><span><i class="key" style="background:#d97706"></i>Друга нерівність</span><span><i class="key" style="background:#14804a"></i>Перетин</span></div><svg class="line-svg" viewBox="0 0 700 130" role="img" aria-label="Перетин x не менше 25 і однієї умови до 26,5"><line x1="35" y1="76" x2="660" y2="76" stroke="#17243b" stroke-width="2"/><path d="M660 76 l-10 -5 v10z" fill="#17243b"/><line x1="202.5" y1="40" x2="640" y2="40" stroke="#315ee8" stroke-width="4"/><path d="M640 40 l-9 -5 v10z" fill="#315ee8"/><line x1="55" y1="54" x2="423.8" y2="54" stroke="#d97706" stroke-width="4"/><path d="M55 54 l9 -5 v10z" fill="#d97706"/><line x1="202.5" y1="92" x2="423.8" y2="92" stroke="#14804a" stroke-width="6" stroke-linecap="round"/><circle cx="202.5" cy="76" r="6" fill="#315ee8" stroke="#315ee8" stroke-width="2"/><circle cx="423.8" cy="76" r="6" fill="#d97706" stroke="#d97706" stroke-width="2"/><text x="202.5" y="116" text-anchor="middle" font-size="16" fill="#17243b">25</text><text x="423.8" y="116" text-anchor="middle" font-size="16" fill="#17243b">26.5</text><text x="670" y="81" font-size="16" fill="#17243b">x</text></svg></div></div>
+</div>
+<p class="answer">Відповідь: маса одного ящика — 26 кг.</p>
+
+<h3>№ 7.33. Ціна ручки</h3>
+<p>Аліса купила записник за 80 грн і 5 ручок, заплативши менше ніж 114 грн. Аліна купила скетчбук за 72 грн і 4 такі самі ручки, заплативши більше ніж 92 грн. Знайди ціну ручки, якщо вона ціла кількість гривень.</p>
+<div class="steps">
+<div class="step"><b>Крок 1.</b> Нехай x — ціна однієї ручки в гривнях.</div>
+<div class="step"><b>Крок 2.</b> Аліса: 80 + 5x &lt; 114.<br>5x &lt; 34.<br>x &lt; 6,8.</div>
+<div class="step"><b>Крок 3.</b> Аліна: 72 + 4x &gt; 92.<br>4x &gt; 20.<br>x &gt; 5.</div>
+<div class="step"><b>Крок 4.</b> Разом: 5 &lt; x &lt; 6,8. Єдине ціле значення — 6.<div class="visual"><div class="legend"><span><i class="key" style="background:#315ee8"></i>Перша нерівність</span><span><i class="key" style="background:#d97706"></i>Друга нерівність</span><span><i class="key" style="background:#14804a"></i>Перетин</span></div><svg class="line-svg" viewBox="0 0 700 130" role="img" aria-label="Перетин x більше 5 і x менше 6,8"><line x1="35" y1="76" x2="660" y2="76" stroke="#17243b" stroke-width="2"/><path d="M660 76 l-10 -5 v10z" fill="#17243b"/><line x1="202.5" y1="40" x2="640" y2="40" stroke="#315ee8" stroke-width="4"/><path d="M640 40 l-9 -5 v10z" fill="#315ee8"/><line x1="55" y1="54" x2="468.0" y2="54" stroke="#d97706" stroke-width="4"/><path d="M55 54 l9 -5 v10z" fill="#d97706"/><line x1="202.5" y1="92" x2="468.0" y2="92" stroke="#14804a" stroke-width="6" stroke-linecap="round"/><circle cx="202.5" cy="76" r="6" fill="white" stroke="#315ee8" stroke-width="3"/><circle cx="468.0" cy="76" r="6" fill="white" stroke="#d97706" stroke-width="3"/><text x="202.5" y="116" text-anchor="middle" font-size="16" fill="#17243b">5</text><text x="468.0" y="116" text-anchor="middle" font-size="16" fill="#17243b">6.8</text><text x="670" y="81" font-size="16" fill="#17243b">x</text></svg></div></div>
+</div>
+<p class="answer">Відповідь: 6 грн.</p>
+</section>
+
+<section class="section" id="practice">
+<span class="tag">✍️ Закріплюємо матеріал</span><h2>Тренувальні вправи</h2>
+<p>Виконуй по черзі. Після перевірки прочитай пояснення — воно допоможе знайти помилку, якщо відповідь неправильна.</p>
+<div class="progress"><span id="progressBar"></span></div><p id="progressText">Правильних відповідей: 0</p>
+<div class="task quiz" data-correct="b" data-explain="2x &gt; 10 дає x &gt; 5. 3x ≤ 21 дає x ≤ 7. Перетин: (5; 7].">
+<h3>1. Розв’яжи систему</h3><div class="system"><span class="brace">{</span><span class="system-lines"><span>2x &gt; 10,</span><span>3x ≤ 21.</span></span></div>
+<label><input type="radio" name="q1" value="a">(5; 7)</label><label><input type="radio" name="q1" value="b">(5; 7]</label><label><input type="radio" name="q1" value="c">[5; 7]</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="a" data-explain="−4x &lt; 8. Ділимо обидві частини на −4 та змінюємо знак: x &gt; −2.">
+<h3>2. Розв’яжи нерівність −4x &lt; 8</h3>
+<label><input type="radio" name="q2" value="a">x &gt; −2</label><label><input type="radio" name="q2" value="b">x &lt; −2</label><label><input type="radio" name="q2" value="c">x &gt; 2</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="c" data-explain="x &lt; −3 і x &gt; 1 задають проміжки, які не перетинаються. Спільних розв’язків немає.">
+<h3>3. Що є розв’язком системи?</h3><div class="system"><span class="brace">{</span><span class="system-lines"><span>x &lt; −3,</span><span>x &gt; 1.</span></span></div>
+<label><input type="radio" name="q3" value="a">(−3; 1)</label><label><input type="radio" name="q3" value="b">Усі дійсні числа</label><label><input type="radio" name="q3" value="c">Розв’язків немає</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="b" data-explain="З першої нерівності x &gt; 5, з другої x &lt; 8. Цілі числа строго між 5 та 8 — 6 і 7.">
+<h3>4. Знайди цілі розв’язки, якщо 5 &lt; x &lt; 8</h3>
+<label><input type="radio" name="q4" value="a">5; 6; 7; 8</label><label><input type="radio" name="q4" value="b">6; 7</label><label><input type="radio" name="q4" value="c">5; 6; 7</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="a" data-explain="80 + 5x &lt; 114 дає x &lt; 6,8. 72 + 4x &gt; 92 дає x &gt; 5. Єдине ціле число між 5 і 6,8 — 6.">
+<h3>5. У задачі про ціну ручки система зводиться до умов x &lt; 6,8 та x &gt; 5. Якщо ціна ціла, вона дорівнює…</h3>
+<label><input type="radio" name="q5" value="a">6 грн</label><label><input type="radio" name="q5" value="b">5 грн</label><label><input type="radio" name="q5" value="c">7 грн</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+</section>
+
+<section class="section" id="check">
+<span class="tag">🧠 Самоперевірка</span><h2>Чи можеш ти пояснити тему самостійно?</h2>
+<div class="task quiz" data-correct="b" data-explain="Система вимагає, щоб значення змінної задовольняло всі нерівності одночасно. Тому беремо перетин проміжків.">
+<h3>1. Що є розв’язком системи нерівностей?</h3>
+<label><input type="radio" name="q6" value="a">Розв’язки тільки першої нерівності</label><label><input type="radio" name="q6" value="b">Значення, що задовольняють усі нерівності системи</label><label><input type="radio" name="q6" value="c">Тільки цілі числа</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="a" data-explain="Якщо ділимо обидві частини нерівності на від’ємне число, знак нерівності обов’язково змінюється на протилежний.">
+<h3>2. Що потрібно зробити, якщо ділимо нерівність на від’ємне число?</h3>
+<label><input type="radio" name="q7" value="a">Змінити знак нерівності на протилежний</label><label><input type="radio" name="q7" value="b">Залишити знак без змін</label><label><input type="radio" name="q7" value="c">Змінити знак лише за наявності дробу</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="task quiz" data-correct="c" data-explain="Порожній перетин означає, що немає жодного числа, яке одночасно задовольняє всі нерівності системи.">
+<h3>3. Що означає, якщо проміжки не перетинаються?</h3>
+<label><input type="radio" name="q8" value="a">Відповідь — усі числа</label><label><input type="radio" name="q8" value="b">Потрібно взяти об’єднання проміжків</label><label><input type="radio" name="q8" value="c">Система не має розв’язків</label>
+<button onclick="checkQuiz(this)">Перевірити</button><div class="feedback"></div></div>
+<div class="note"><b>Рефлексія.</b> Перш ніж завершити, спробуй уголос пояснити: 1) як розв’язувати кожну нерівність; 2) як знайти перетин; 3) як виписати цілі розв’язки; 4) чому інколи розв’язків немає.</div>
+<button class="secondary" onclick="resetAll()">Скинути відповіді й пройти ще раз</button>
+</section>
+</main>
+<footer>Навчальний матеріал для самостійного опрацювання · Алгебра, 9 клас · За підручником Істера, § 7, стор. 52–59</footer>
+<script>
+let checked=new Set();
+function checkTask(btn,correct,explain){const task=btn.closest('.task');const selected=task.querySelector('input[type=radio]:checked');const f=task.querySelector('.feedback');if(!selected){f.textContent='Спочатку обери відповідь.';f.className='feedback bad';return}if(selected.value===correct){f.textContent='Правильно! '+explain;f.className='feedback good'}else{f.textContent='Спробуй ще раз. '+explain;f.className='feedback bad'}}
+function checkQuiz(btn){const task=btn.closest('.quiz');const selected=task.querySelector('input[type=radio]:checked');const f=task.querySelector('.feedback');if(!selected){f.textContent='Спочатку обери відповідь.';f.className='feedback bad';return}const id=Array.from(document.querySelectorAll('.quiz')).indexOf(task);if(selected.value===task.dataset.correct){f.textContent='Правильно! '+task.dataset.explain;f.className='feedback good';checked.add(id)}else{f.textContent='Поки що не зовсім. '+task.dataset.explain;f.className='feedback bad';checked.delete(id)}updateProgress()}
+function updateProgress(){const total=document.querySelectorAll('.quiz').length;document.getElementById('progressBar').style.width=(checked.size/total*100)+'%';document.getElementById('progressText').textContent='Правильних відповідей: '+checked.size+' із '+total}
+function resetAll(){document.querySelectorAll('.quiz input').forEach(i=>i.checked=false);document.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback'});checked.clear();updateProgress();window.scrollTo({top:document.getElementById('practice').offsetTop-50,behavior:'smooth'})}
+</script>
+</body>
+</html>
